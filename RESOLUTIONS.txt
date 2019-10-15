@@ -1,0 +1,32 @@
+960*540 2*2 1.5     DR+     double res. plus    518400	2.25
+640*360 3*3 1.3333  DR      double res.         230400	1.7778
+480*270 4*4 1.25    VHR     very high res.      129600	1.5625
+384*216 5*5 1.2     HR      high res.            82944	1.44
+320*180 6*6 1.3333  SR      standard res.		 57600	1.7778
+240*135 8*8 N/A     LR      low res.			 32400	N/A
+
+
+bit depths:
+1, 2, 4, 8, 16, 24
+24 = 32-bit (use 24 lowest) OR 24-bit (3 consecutive bytes) OR 24-bit (3 byte-planes)
+
+16 = 5r5g5b or 5r6g5b
+
+1, 2, 4 = 16-bit CLUT
+
+8 = CLUT? maybe too large...
+
+2r3g3b OR 2r4g2b OR 4r2g2b OR 2r2g4b
+
+
+if we subdivide 4k resolutions we can get:
+768*432 5*5 (2.5*2.5 at 1920*1080) 331776 pixels, compared to 307200 at 640*480
+
+alternate: 1440p:
+
+2560*1440 2*2
+1280*720  4*4
+640*360   5*5
+512*288   8*8
+
+TERRIBLE!

@@ -1,0 +1,20 @@
+st r1, r2
+st r1, label
+st r1, [r2]
+st r1, [label]
+st dw [r1], r2
+st [r1], label
+
+
+opcode+len of data
+normal:
+specify data to store (register, 4 bits)
+specify address to store (register or immediate, perhaps indirect)
+specify offset (register, 4 bits)
+length of address
+reverse:
+specify data to store (register or immediate, perhaps indirect)
+specify address (register, 4 bits)
+specify offset (register, 4 bits)
+
+

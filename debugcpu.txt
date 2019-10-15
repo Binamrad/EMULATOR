@@ -1,0 +1,247 @@
+********************************************************
+running cycle 0
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 512
+inst buffer empty
+prefetch_stage
+prefetching 512
+********************************************************
+running cycle 1
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 512
+simple instruction 78
+decoding 1, 514
+complex arithmetic instruction 8-ish
+prefetch_stage
+prefetching 544
+********************************************************
+running cycle 2
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0
+opfetch pipe 1
+decoding 0, 521
+simple instruction 10
+decoding 1, 523
+simple instruction 78
+prefetch_stage
+prefetch buffer full 51
+********************************************************
+running cycle 3
+********************************************************
+execute microop 78 in 0
+execute microop 10 in 1
+32res = 1, 0, 1
+opfetch pipe 0
+opfetch pipe 1
+decoding 0, 525
+complex arithmetic instruction 8-ish
+decoding 1, 532
+simple instruction 10
+prefetch_stage
+prefetch buffer full 42
+********************************************************
+running cycle 4
+********************************************************
+execute microop 10 in 0
+32res = 2, 1, 1
+execute microop 78 in 1
+opfetch pipe 0
+opfetch pipe 1
+decoding 0, 534
+decoding 1, 535
+prefetch_stage
+prefetch buffer full 40
+********************************************************
+running cycle 5
+********************************************************
+execute microop 10 in 0
+32res = 18193, 0, 18193
+execute microop 10 in 1
+32res = 2, 0, 2
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 536
+decoding 1, 537
+prefetch_stage
+prefetch buffer full 38
+********************************************************
+running cycle 6
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 538
+decoding 1, 539
+prefetch_stage
+prefetch buffer full 36
+********************************************************
+running cycle 7
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 540
+decoding 1, 541
+prefetch_stage
+prefetch buffer full 34
+********************************************************
+running cycle 8
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 542
+decoding 1, 543
+prefetch_stage
+prefetch buffer full 32
+********************************************************
+running cycle 9
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 544
+decoding 1, 545
+prefetch_stage
+prefetching 576
+********************************************************
+running cycle 10
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 546
+decoding 1, 547
+prefetch_stage
+prefetch buffer full 60
+********************************************************
+running cycle 11
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 548
+decoding 1, 549
+prefetch_stage
+prefetch buffer full 58
+********************************************************
+running cycle 12
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 550
+decoding 1, 551
+prefetch_stage
+prefetch buffer full 56
+********************************************************
+running cycle 13
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 552
+decoding 1, 553
+prefetch_stage
+prefetch buffer full 54
+********************************************************
+running cycle 14
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 554
+decoding 1, 555
+prefetch_stage
+prefetch buffer full 52
+********************************************************
+running cycle 15
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 556
+decoding 1, 557
+prefetch_stage
+prefetch buffer full 50
+********************************************************
+running cycle 16
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 558
+decoding 1, 559
+prefetch_stage
+prefetch buffer full 48
+********************************************************
+running cycle 17
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 560
+decoding 1, 561
+prefetch_stage
+prefetch buffer full 46
+********************************************************
+running cycle 18
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 562
+decoding 1, 563
+prefetch_stage
+prefetch buffer full 44
+********************************************************
+running cycle 19
+********************************************************
+exec pipe 0 not ready
+exec pipe 1 not ready
+opfetch pipe 0 no instruction
+opfetch pipe 1 no instruction
+decoding 0, 564
+decoding 1, 565
+prefetch_stage
+prefetch buffer full 42
+register 0: 2
+register 1: 2
+register 2: 0
+register 3: 0
+register 4: 0
+register 5: 0
+register 6: 0
+register 7: 0
+register 8: 0
+register 9: 0
+register 10: 0
+register 11: 0
+register 12: 0
+register 13: 0
+register 14: 0
+register 15: 0
+0

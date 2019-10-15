@@ -1,0 +1,111 @@
+a = advanced
+o = opcode
+r = register
+
+a = 0
+aooo oooo rrrr rrrr
+add r1, r2
+mov r1, r2
+and r1, r2
+sub r1, r2
+subr r1, r2
+div
+divr
+cmp r1, r2
+
+
+i = immediate
+L = instruction length
+m = memory toggle
+
+a = 1
+aooo oooo rrrr rrrr iiLL mm--
+
+add dw r1, r1
+add dw r1, [r1]
+add b r1, r1, 255
+
+special
+lea r1, r2, r3*2, 0xffff
+loads address in r1 according to r2+r3*2+0xffff
+the multiply is a shift
+always outputs 32-bit address
+encoding
+R = extra register disable
+D = disable reg2
+s = shift
+M = memory mode read/write
+-ooo oooo rrrr rrrr iiLL RDMM rrrr ssss iiii iiii iiii iiii iiii iiii iiii iiii
+
+
+sdefm
+set default mode
+set how wide default instructions are
+4 instrs: sdefm b, sdefm w, sdefm dw, sdefm qw
+
+int, interrupt
+2-dim?
+interrupt vector, interrupt index?
+int r1
+int 0xffff
+
+no-reg
+nop
+halt
+invalid
+
+1-reg
+inc
+dec
+clr
+
+floating point
+
+fadd
+fmul
+fsub
+fsubr
+fdiv
+fdivr
+fabs
+fchs
+flog
+
+fcos
+fsin
+fsqrt
+frcp
+
+fnop
+frndint <- round to int
+fmov
+fitof
+
+fld
+fst
+fist
+fcmp  The form of the MOV instruction used to access the test registers has been removed on the Pentium and future Intel Architecture processors. The following instructions are new in the Intel486 processor: BSWAP (byte swap) instruction. XADD (exchange and add) instruction.
+ficmp
+
+fiadd
+fisub
+fimul
+fidiv
+
+constant load instrs
+
+vector instructions, length 2:
+viadd r1, r2
+visub
+vimul
+vidiv
+viand
+vior
+vixor
+vmov
+vfadd
+vfmul
+vfsub
+vfdiv
+vld
+vst

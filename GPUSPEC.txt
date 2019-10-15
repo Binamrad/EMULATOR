@@ -1,0 +1,187 @@
+GEN 1:
+GPU colors: 2
+SGEN colors: 2,4 (320*240, 160*240(4-color))
+0: copy texture to location
+1: copy texture to location on 0
+
+Registers needed GPU:
+TEX_LOC_X0
+TEX_LOC_X1
+TEX_LOC_Y0
+TEX_LOC_Y1
+DRAW_LOC_X0
+DRAW_LOC_X1
+DRAW_LOC_Y0
+DRAW_LOC_Y1
+TEX_WIDTH
+TEX_HEIGHT
+DRAW_MODE (set to trigger)
+GPU_STATUS
+
+Registers needed SGEN:
+SGEN_MODE
+SGEN_BUFFER_X0
+SGEN_BUFFER_X1
+SGEN_BUFFER_Y0
+SGEN_BUFFER_Y1
+
+GEN 2:
+GPU colors: 2,4,16
+SGEN colors: 2,4,16 (8-bit color tables) (320*240) (interlacing possible)
+0: copy texture to location
+1: copy texture to location on C != COL_IGNORE_REG
+2: copy texture to location, stretch to fit
+3: copy texture to location on C != COL_IGNORE_REG, stretch to fit
+
+Registers needed GPU:
+TEX_LOC_X0
+TEX_LOC_X1
+TEX_LOC_Y0
+TEX_LOC_Y1
+DRAW_LOC_X0
+DRAW_LOC_X1
+DRAW_LOC_Y0
+DRAW_LOC_Y1
+TEX_WIDTH
+TEX_HEIGHT
+DRAW_MODE (set to trigger) {}
+GPU_STATUS
+DRAW_WIDTH
+DRAW_HEIGHT
+COL_IGNORE (init to 0)
+
+
+Registers needed SGEN:
+SGEN_MODE
+SGEN_BUFFER_X0
+SGEN_BUFFER_X1
+SGEN_BUFFER_Y0
+SGEN_BUFFER_Y1
+COL_TABLE_0
+COL_TABLE_1
+COL_TABLE_2
+COL_TABLE_3
+COL_TABLE_4
+COL_TABLE_5
+COL_TABLE_6
+COL_TABLE_7
+COL_TABLE_8
+COL_TABLE_9
+COL_TABLE_10
+COL_TABLE_11
+COL_TABLE_12
+COL_TABLE_13
+COL_TABLE_14
+COL_TABLE_15
+
+
+GEN 3:
+GPU colors: 2,4,16,256,64k
+SGEN colors: 2,4,16,256 (8-bit,16-bit color tables), 64K (320*240, 640*480)
+0: copy texture to location (shader defined)
+1: copy texture to location on C != N (shader defined)
+2: copy texture to location, stretch to fit (shader defined)
+3: copy texture to location on C != N, stretch to fit (shader defined)
+4: apply shader to rectangle
+
+Registers needed GPU:				size in bytes
+TEX_LOC_X0							1
+TEX_LOC_X1							1
+TEX_LOC_Y0							1
+TEX_LOC_Y1							1
+DRAW_LOC_X0							1
+DRAW_LOC_X1							1
+DRAW_LOC_Y0							1
+DRAW_LOC_Y1							1
+TEX_WIDTH							1
+TEX_HEIGHT							1
+DRAW_MODE (set to trigger)			1	
+GPU_STATUS							1
+DRAW_WIDTH							1
+DRAW_HEIGHT							1
+COL_IGNORE (init to 0)				1
+COL_IGNORE_EXT						3
+SH_PARAM_0							4
+SH_PARAM_1							4
+SH_PARAM_2							4
+SH_PARAM_3							4
+
+Registers needed SGEN:
+SGEN_MODE							1
+SGEN_BUFFER_X0						1
+SGEN_BUFFER_X1						1
+SGEN_BUFFER_Y0						1
+SGEN_BUFFER_Y1						1
+COL_TABLE_0							1
+COL_TABLE_1							1
+COL_TABLE_2							1
+COL_TABLE_3							1
+COL_TABLE_4							1
+COL_TABLE_5							1
+COL_TABLE_6							1
+COL_TABLE_7							1
+COL_TABLE_8							1
+COL_TABLE_9							1
+COL_TABLE_10						1
+COL_TABLE_11						1
+COL_TABLE_12						1
+COL_TABLE_13						1
+COL_TABLE_14						1
+COL_TABLE_15						1
+
+
+GEN 4:(current)
+GPU colors: 2,4,16,256,64K,24M
+SGEN colors: 2,4,16,256 (8-bit,16-bit color tables), 64K,24M
+0: copy texture to location (shader defined)
+1: copy texture to location on C != N (shader defined)
+2: copy texture to location, stretch to fit (shader defined)
+3: copy texture to location on C != N, stretch to fit (shader defined)
+4: apply shader to rectangle
+5: apply shader to triangle
+6: flood fill rectangle
+
+Registers needed GPU:				size in bytes
+TEX_LOC_X0							1
+TEX_LOC_X1							1
+TEX_LOC_Y0							1
+TEX_LOC_Y1							1
+DRAW_LOC_X0							1
+DRAW_LOC_X1							1
+DRAW_LOC_Y0							1
+DRAW_LOC_Y1							1
+TEX_WIDTH							1
+TEX_HEIGHT							1
+DRAW_MODE (set to trigger)			1	
+GPU_STATUS							1
+DRAW_WIDTH							1
+DRAW_HEIGHT							1
+COL_IGNORE (init to 0)				1
+COL_IGNORE_EXT						3
+SH_PARAM_0							4
+SH_PARAM_1							4
+SH_PARAM_2							4
+SH_PARAM_3							4
+
+Registers needed SGEN:
+SGEN_MODE							1
+SGEN_BUFFER_X0						1
+SGEN_BUFFER_X1						1
+SGEN_BUFFER_Y0						1
+SGEN_BUFFER_Y1						1
+COL_TABLE_0							1
+COL_TABLE_1							1
+COL_TABLE_2							1
+COL_TABLE_3							1
+COL_TABLE_4							1
+COL_TABLE_5							1
+COL_TABLE_6							1
+COL_TABLE_7							1
+COL_TABLE_8							1
+COL_TABLE_9							1
+COL_TABLE_10						1
+COL_TABLE_11						1
+COL_TABLE_12						1
+COL_TABLE_13						1
+COL_TABLE_14						1
+COL_TABLE_15						1
